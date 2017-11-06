@@ -101,7 +101,7 @@ def Polis_Massa():
 
 def Alderaan():
 	global count
-	print("From here you can fly in 3 systems: Polis_Massa, Nabu, Chot. Or you can fly the planet itself and look here.")
+	print("Alderaan has the capital - Aldera. There you can find something interesting. From here you can fly in 3 systems: Polis_Massa, Nabu, Chot. Or you can fly the planet itself and look here.")
 	ch1 = str(input("What do you choose? > "))
 	if ch1 in flying:
 		print("You've flown around the planet. Unfortunately, there is almost no life, except for local primitive animals. You spent 1 day. Look further.")
@@ -125,7 +125,7 @@ def Alderaan():
 
 def Tatooine():
 	global count
-	print("From here you can fly in 4 systems: Felucia, Polis_Massa, Nabu, Kamino. Or you can fly the planet itself and look here.")
+	print("The planet has only desert and nothing else. From here you can fly in 4 systems: Felucia, Polis_Massa, Nabu, Kamino. Or you can fly the planet itself and look here.")
 	ch1 = str(input("What do you choose? > "))
 	if ch1 in flying:
 		print("You've flown around the planet. Unfortunately, there is almost no life, except for local primitive animals. You spent 1 day. Look further.")
@@ -209,7 +209,7 @@ def Utapau():
 
 def Keshyyk():
 	global count
-	print("From here you can fly in 2 systems: Utapau, Corasant. Or you can fly the planet itself and look here.")
+	print("The planet has a jungle, where the wookiees live. The capital of planet is Rwookrrorro. From here you can fly in 2 systems: Utapau, Corasant. Or you can fly the planet itself and look here.")
 	ch1 = str(input("What do you choose? > "))
 	if ch1 in flying:
 		print("You've flown around the planet. Unfortunately, there is almost no life, except for local primitive animals. You spent 1 day. Look further.")
@@ -229,7 +229,7 @@ def Keshyyk():
 
 def Corasant():
 	global count
-	print("From here you can fly in 3 systems: Kamino, Keshyyk, Dagoba. Or you can fly the planet itself and look here.")
+	print("This giant planet-city has a 10 billion people. Here we can see Senat and Temple of the Jedi. From here you can fly in 3 systems: Kamino, Keshyyk, Dagoba. Or you can fly the planet itself and look here.")
 	ch1 = str(input("What do you choose? > "))
 	if ch1 in flying:
 		print("You've flown around the planet. Unfortunately, there is almost no life, except for local primitive animals. You spent 1 day. Look further.")
@@ -253,7 +253,7 @@ def Corasant():
 
 def Nabu():
 	global count
-	print("From here you can fly in 5 systems: Chot, Dagoba, Kamino, Tatooine, Alderaan. Or you can fly the planet itself and look here.")
+	print("More than 85 percentages of the surface of the planet is covered with waterFrom here you can fly in 5 systems: Chot, Dagoba, Kamino, Tatooine, Alderaan. Or you can fly the planet itself and look here.")
 	ch1 = str(input("What do you choose? > "))
 	if ch1 in flying:
 		print("You've flown around the planet. Unfortunately, there is almost no life, except for local primitive animals. You spent 1 day. Look further.")
@@ -325,7 +325,7 @@ def Dagoba():
 
 def Yavin():
 	global count
-	print("From here you can fly in 1 systems: Polis_Massa. Or you can fly the planet itself and look here.")
+	print("The planet has a lot of deciduous forests. From here you can fly in 1 systems: Polis_Massa. Or you can fly the planet itself and look here.")
 	ch1 = str(input("What do you choose? > "))
 	if ch1 in flying:
 		winn()
