@@ -4,337 +4,420 @@ flying = ["Fly", "fly"]
 # planets_func
 def Geonosis():
 	global count
+	print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 	print("The planet has always been a droid factory. From here you can fly in 3 systems: Felucia, Kamino or Utapau. Or you can fly the planet itself and look here.")
 	ch1 = str(input("What do you choose? > "))
 	if ch1 in flying:
+		print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 		print("You've flown around the planet. Unfortunately, there is almost no life, except for local primitive animals. You spent 1 day. Look further.")
 		count += 1
 		return 1 # Geonosis
 	elif ch1 == "Felucia":
+		print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 		print ("You fly to Felucia and spend 1 day.")
 		count += 1
 		return 2 # Felucia()
 	elif ch1 == "Kamino":
+		print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 		print ("You fly to Kamino and spend 1 day.")
 		count += 1
 		return 7 # Kamino()
 	elif ch1 == "Utapau":
+		print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 		print ("You fly to Utapau and spend 1 day.")
 		count += 1
 		return 8 # Utapau()
 	else:
+		print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 		print("Hey, Young padavan, do not waste your time! Do something.")
 		return 1 # Geonosis()
 
 def Felucia():
 	global count
-	print("The planet has jungle.\
-		From here you can fly in 3 systems: Geonosis, Mustafor or Tatooine. Or you can fly the planet itself and look here.")
+	print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
+	print("The planet has jungle. From here you can fly in 3 systems: Geonosis, Mustafor or Tatooine. Or you can fly the planet itself and look here.")
 	ch1 = str(input("What do you choose? > "))
 	if ch1 in flying:
+		print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 		print("You've flown around the planet. Unfortunately, there is almost no life, except for local primitive animals. You spent 1 day. Look further.")
 		count += 1
 		return 2 # Felucia()
 	elif ch1 == "Geonosis":
+		print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 		print ("You fly to Geonosis and spend 1 day.")
 		count += 1
 		return 1 # Geonosis()
 	elif ch1 == "Mustafor":
+		print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 		print ("You fly to Mustafor and spend 1 day.")
 		count += 1
 		return 3 # Mustafor()
 	elif ch1 == "Tatooine":
+		print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 		print ("You fly to Tatooine and spend 1 day.")
 		count += 1
 		return 6 # Tatooine()
 	else:
+		print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 		print("Hey, Young padavan, do not waste your time! Do something.")
 		return 2 # Felucia()
 
 def Mustafor():
 	global count
+	print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 	print("From here you can fly in 2 systems: Felucia, Polis_Massa. Or you can fly the planet itself and look here.")
 	ch1 = str(input("What do you choose? > "))
 	if ch1 in flying:
+		print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 		print("You've flown around the planet. Unfortunately, there is almost no life, except for local primitive animals. You spent 1 day. Look further.")
 		count += 1
 		return 3 # Mustafor()
 	elif ch1 == "Felucia":
+		print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 		print ("You fly to Felucia and spend 1 day.")
 		count += 1
 		return 2 # Felucia()
 	elif ch1 == "Polis_Massa":
+		print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 		print ("You fly to Polis_Massa and spend 1 day.")
 		count += 1
 		return 4 # Polis_Massa()
 	else:
+		print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 		print("Hey, Young padavan, do not waste your time! Do something.")
 		return 3 # Mustafor()
 
 def Polis_Massa():
 	global count
+	print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 	print("From here you can fly in 4 systems: Yavin, Mustafor, Tatooine, Alderaan. Or you can fly the planet itself and look here.")
 	ch1 = str(input("What do you choose? > "))
 	if ch1 in flying:
+		print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 		print("You've flown around the planet. Unfortunately, there is almost no life, except for local primitive animals. You spent 1 day. Look further.")
 		count += 1
 		return 4 # Polis_Massa()
 	elif ch1 == "Yavin":
+		print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 		print ("You fly to Yavin and spend 1 day.")
 		count += 1
 		return 14 # Yavin()
 	elif ch1 == "Mustafor":
+		print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 		print ("You fly to Mustafor and spend 1 day.")
 		count += 1
 		return 3 # Mustafor()
 	elif ch1 == "Tatooine":
+		print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 		print ("You fly to Tatooine and spend 1 day.")
 		count += 1
 		return 6 # Tatooine()
 	elif ch1 == "Alderaan":
+		print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 		print ("You fly to Alderaan and spend 1 day.")
 		count += 1
 		return 5 # Alderaan()
 	else:
+		print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 		print("Hey, Young padavan, do not waste your time! Do something.")
 		return 4 # Polis_Massa()
 
 def Alderaan():
 	global count
+	print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 	print("Alderaan has the capital - Aldera. There you can find something interesting. From here you can fly in 3 systems: Polis_Massa, Nabu, Chot. Or you can fly the planet itself and look here.")
 	ch1 = str(input("What do you choose? > "))
 	if ch1 in flying:
+		print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 		print("You've flown around the planet. Unfortunately, there is almost no life, except for local primitive animals. You spent 1 day. Look further.")
 		count += 1
 		return 5 # Alderaan()
 	elif ch1 == "Polis_Massa":
+		print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 		print ("You fly to Polis_Massa and spend 1 day.")
 		count += 1
 		return 4 # Polis_Massa()
 	elif ch1 == "Nabu":
+		print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 		print ("You fly to Nabu and spend 1 day.")
 		count += 1
 		return 11 # Nabu()
 	elif ch1 == "Chot":
+		print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 		print ("You fly to Chot and spend 1 day.")
 		count += 1
 		return 12 # Chot()
 	else:
+		print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 		print("Hey, Young padavan, do not waste your time! Do something.")
 		return 5 # Alderaan()
 
 def Tatooine():
 	global count
+	print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 	print("The planet has only desert and nothing else. From here you can fly in 4 systems: Felucia, Polis_Massa, Nabu, Kamino. Or you can fly the planet itself and look here.")
 	ch1 = str(input("What do you choose? > "))
 	if ch1 in flying:
+		print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 		print("You've flown around the planet. Unfortunately, there is almost no life, except for local primitive animals. You spent 1 day. Look further.")
 		count += 1
 		return 6 # Tatooine()
 	elif ch1 == "Felucia":
+		print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 		print ("You fly to Felucia and spend 1 day.")
 		count += 1
 		return 2 # Felucia()
 	elif ch1 == "Polis_Massa":
+		print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 		print ("You fly to Polis_Massa and spend 1 day.")
 		count += 1
 		return 4 # Polis_Massa()
 	elif ch1 == "Nabu":
+		print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 		print ("You fly to Nabu and spend 1 day.")
 		count += 1
 		return 11 # Nabu()
 	elif ch1 == "Kamino":
+		print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 		print ("You fly to Kamino and spend 1 day.")
 		count += 1
 		return 7 # Kamino()
 	else:
+		print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 		print("Hey, Young padavan, do not waste your time! Do something.")
 		return 6 # Tatooine()
 
 def Kamino():
 	global count
+	print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 	print("From here you can fly in 5 systems: Geonosis, Tatooine, Utapau, Nabu, Corasant. Or you can fly the planet itself and look here.")
 	ch1 = str(input("What do you choose? > "))
 	if ch1 in flying:
+		print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 		print("You've flown around the planet. Unfortunately, there is almost no life, except for local primitive animals. You spent 1 day. Look further.")
 		count += 1
 		return 7 # Kamino()
 	elif ch1 == "Geonosis":
+		print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 		print ("You fly to Geonosis and spend 1 day.")
 		count += 1
 		return 1 # Geonosis()
 	elif ch1 == "Utapau":
+		print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 		print ("You fly to Utapau and spend 1 day.")
 		count += 1
 		return 8 # Utapau()
 	elif ch1 == "Tatooine":
+		print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 		print ("You fly to Tatooine and spend 1 day.")
 		count += 1
 		return 6 # Tatooine()
 	elif ch1 == "Nabu":
+		print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 		print ("You fly to Nabu and spend 1 day.")
 		count += 1
 		return 11 # Nabu()
 	elif ch1 == "Corasant":
+		print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 		print ("You fly to Corasant and spend 1 day.")
 		count += 1
 		return 10 # Corasant()
 	else:
+		print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 		print("Hey, Young padavan, do not waste your time! Do something.")
 		return 7 # Kamino()
 
 def Utapau():
 	global count
+	print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 	print("From here you can fly in 3 systems: Geonosis, Kamino, Keshyyk. Or you can fly the planet itself and look here.")
 	ch1 = str(input("What do you choose? > "))
 	if ch1 in flying:
+		print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 		print("You've flown around the planet. Unfortunately, there is almost no life, except for local primitive animals. You spent 1 day. Look further.")
 		count += 1
 		return 8 # Utapau()
 	elif ch1 == "Geonosis":
+		print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 		print ("You fly to Geonosis and spend 1 day.")
 		count += 1
 		return 1 # Geonosis()
 	elif ch1 == "Kamino":
+		print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 		print ("You fly to Kamino and spend 1 day.")
 		count += 1
 		return 7 # Kamino()
 	elif ch1 == "Keshyyk":
+		print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 		print ("You fly to Keshyyk and spend 1 day.")
 		count += 1
 		return 9 # Keshyyk()
 	else:
+		print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 		print("Hey, Young padavan, do not waste your time! Do something.")
 		return 8 # Utapau()
 
 def Keshyyk():
 	global count
+	print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 	print("The planet has a jungle, where the wookiees live. The capital of planet is Rwookrrorro. From here you can fly in 2 systems: Utapau, Corasant. Or you can fly the planet itself and look here.")
 	ch1 = str(input("What do you choose? > "))
 	if ch1 in flying:
+		print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 		print("You've flown around the planet. Unfortunately, there is almost no life, except for local primitive animals. You spent 1 day. Look further.")
 		count += 1
 		return 9 # Keshyyk()
 	elif ch1 == "Utapau":
+		print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 		print ("You fly to Utapau and spend 1 day.")
 		count += 1
 		return 8 # Utapau()
 	elif ch1 == "Corasant":
+		print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 		print ("You fly to Corasant and spend 1 day.")
 		count += 1
 		return 10 # Corasant()
 	else:
+		print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 		print("Hey, Young padavan, do not waste your time! Do something.")
 		return 9 # Keshyyk()
 
 def Corasant():
 	global count
+	print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 	print("This giant planet-city has a 10 billion people. Here we can see Senat and Temple of the Jedi. From here you can fly in 3 systems: Kamino, Keshyyk, Dagoba. Or you can fly the planet itself and look here.")
 	ch1 = str(input("What do you choose? > "))
 	if ch1 in flying:
+		print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 		print("You've flown around the planet. Unfortunately, there is almost no life, except for local primitive animals. You spent 1 day. Look further.")
 		count += 1
 		return 10 # Corasant()
 	elif ch1 == "Kamino":
+		print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 		print ("You fly to Kamino and spend 1 day.")
 		count += 1
 		return 7 # Kamino()
 	elif ch1 == "Keshyyk":
+		print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 		print ("You fly to Keshyyk and spend 1 day.")
 		count += 1
 		return 9 # Keshyyk()
 	elif ch1 == "Dagoba":
+		print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 		print ("You fly to Dagoba and spend 1 day.")
 		count += 1
 		return 13 # Dagoba()
 	else:
+		print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 		print("Hey, Young padavan, do not waste your time! Do something.")
 		return 10 # Corasant()
 
 def Nabu():
 	global count
+	print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 	print("More than 85 percentages of the surface of the planet is covered with waterFrom here you can fly in 5 systems: Chot, Dagoba, Kamino, Tatooine, Alderaan. Or you can fly the planet itself and look here.")
 	ch1 = str(input("What do you choose? > "))
 	if ch1 in flying:
+		print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 		print("You've flown around the planet. Unfortunately, there is almost no life, except for local primitive animals. You spent 1 day. Look further.")
 		count += 1
 		return 11 # Nabu()
 	elif ch1 == "Chot":
+		print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 		print ("You fly to Chot and spend 1 day.")
 		count += 1
 		return 12 # Chot()
 	elif ch1 == "Dagoba":
+		print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 		print ("You fly to Dagoba and spend 1 day.")
 		count += 1
 		return 13 # Dagoba()
 	elif ch1 == "Tatooine":
+		print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 		print ("You fly to Tatooine and spend 1 day.")
 		count += 1
 		return 6 # Tatooine()
 	elif ch1 == "Kamino":
+		print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 		print ("You fly to Kamino and spend 1 day.")
 		count += 1
 		return 7 # Kamino()
 	elif ch1 == "Alderaan":
+		print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 		print ("You fly to Alderaan and spend 1 day.")
 		count += 1
 		return 5 # Alderaan()
 	else:
+		print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 		print("Hey, Young padavan, do not waste your time! Do something.")
 		return 11 # Nabu()
 
 def Chot():
 	global count
+	print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 	print("From here you can fly in 2 systems: Nabu, Alderaan. Or you can fly the planet itself and look here.")
 	ch1 = str(input("What do you choose? > "))
 	if ch1 in flying:
+		print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 		print("You've flown around the planet. Unfortunately, there is almost no life, except for local primitive animals. You spent 1 day. Look further.")
 		count += 1
 		return 12 # Chot()
 	elif ch1 == "Alderaan":
+		print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 		print ("You fly to Alderaan and spend 1 day.")
 		count += 1
 		return 5 # Alderaan()
 	elif ch1 == "Nabu":
+		print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 		print ("You fly to Nabu and spend 1 day.")
 		count += 1
 		return 11 # Nabu()
 	else:
+		print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 		print("Hey, Young padavan, do not waste your time! Do something.")
 		return 12 # Chot()
 
 def Dagoba():
 	global count
+	print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 	print("From here you can fly in 2 systems: Nabu, Corasant. Or you can fly the planet itself and look here.")
 	ch1 = str(input("What do you choose? > "))
 	if ch1 in flying:
+		print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 		print("You've flown around the planet. Unfortunately, there is almost no life, except for local primitive animals. You spent 1 day. Look further.")
 		count += 1
 		return 13 # Dagoba()
 	elif ch1 == "Nabu":
+		print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 		print ("You fly to Nabu and spend 1 day.")
 		count += 1
 		return 11 # Nabu()
 	elif ch1 == "Corasant":
+		print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 		print ("You fly to Corasant and spend 1 day.")
 		count += 1
 		return 10 # Corasant()
 	else:
+		print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 		print("Hey, Young padavan, do not waste your time! Do something.")
 		return 13 #Dagoba()
 
 def Yavin():
 	global count
+	print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 	print("The planet has a lot of deciduous forests. From here you can fly in 1 systems: Polis_Massa. Or you can fly the planet itself and look here.")
 	ch1 = str(input("What do you choose? > "))
 	if ch1 in flying:
+		print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 		winn()
 		return -1 # winn()
 	elif ch1 == "Polis_Massa":
+		print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 		print ("You fly to Polis_Massa and spend 1 day.")
 		count += 1
 		return 4 # Polis_Massa()
 	else:
+		print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 		print("Hey, Young padavan, do not waste your time! Do something.")
 		Yavin()
 
@@ -434,4 +517,5 @@ while True:
 		print ("Today is ", count, "day of your trip")
 
 #finish
+print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 print("May the force be with you.")
